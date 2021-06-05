@@ -1,11 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
+import Cat from './Cat'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <View style={styles.container}>      
+      <Cat/>
+      <Image
+        source={{ uri: "https://reactnative.dev/docs/assets/p_cat1.png" }}
+        style={{ width: 200, height: 200 }}>
+      </Image>
       <StatusBar style="auto" />
     </View>
   );
